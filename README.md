@@ -1,25 +1,41 @@
 # 1ogic.cn 个人主页
 
-这是一个无需构建工具的静态个人主页模板，适合直接部署到 GitHub Pages。页面包含：
+这是杨易的个人主页，使用无需构建工具的静态文件，适合直接部署到 GitHub Pages。页面包含：
 
 - 响应式布局，兼容手机和桌面端
 - 深色 / 浅色主题切换，自动记忆选择
-- 作品展示、关于我、动态记录和邮箱联系
+- 个人介绍、明日方舟电子通行证展示、动态记录和 QQ 联系
+- 独立的匿名提问页面：`https://1ogic.cn/message/`
+- 文章页面：`/posts/2026-memoir/` 和 `/posts/qingdao-trip/`
 - `CNAME` 已配置为 `1ogic.cn`
+- `assets/` 中包含头像和电子通行证实拍图
 
 ## 1. 修改内容
 
 用编辑器打开 `index.html`，搜索并替换以下内容：
 
-- `Logic`：你的名字或网名
-- `hello@1ogic.cn`：你的邮箱
-- GitHub、X、LinkedIn 链接
-- 作品名称、描述和链接
-- `img src`：替换成你自己的图片地址
+- `杨易`：你的名字或网名
+- `计算机科学与技术在读喵`：你的身份描述
+- `QQ 280409626`：你的联系方式
+- 电子通行证的名称、描述和购买链接
+- `assets/avatar.jpg`：个人头像
+- `assets/pass-holder-1.jpg`、`assets/pass-holder-2.jpg`：项目图片
 
-如果不想依赖外部图片，可以把图片放进当前目录的 `images` 文件夹，然后把地址改成 `images/avatar.jpg` 这类相对路径。
+图片已经放在 `assets` 文件夹中，部署时需要连同这个文件夹一起上传。
 
-## 2. 用 GitHub Pages 免费托管
+## 匿名提问功能
+
+主页入口指向 `https://1ogic.cn/message/`。由于 GitHub Pages 只有静态托管能力，接收问题需要一个表单服务。当前页面使用 Formspree 的配置占位符：
+
+1. 打开 [Formspree](https://formspree.io/)，注册并创建一个新表单。
+2. 复制它提供的表单地址，格式类似 `https://formspree.io/f/xxxxxx`。
+3. 打开 `message/index.html`，找到 `action="https://formspree.io/f/YOUR_FORM_ID"`。
+4. 用你的真实地址替换 `YOUR_FORM_ID`。
+5. 重新上传 `message` 文件夹。
+
+Formspree 有免费额度。页面不收集姓名和邮箱，但任何第三方表单服务都可能记录基础访问日志，因此页面已经提醒访客不要提交敏感信息。
+
+## 3. 用 GitHub Pages 免费托管
 
 GitHub Pages 对公开仓库免费，适合这个纯静态网站。
 
@@ -41,7 +57,7 @@ git remote add origin https://github.com/你的用户名/my-homepage.git
 git push -u origin main
 ```
 
-## 3. 绑定 1ogic.cn
+## 4. 绑定 1ogic.cn
 
 `CNAME` 文件已经写好，但还需要在域名服务商后台设置 DNS。
 
@@ -73,7 +89,7 @@ git push -u origin main
 
 DNS 生效可能需要几分钟到 24 小时。不要删除仓库根目录的 `CNAME` 文件，否则 GitHub 可能会解除自定义域名绑定。
 
-## 4. 其他免费托管选项
+## 5. 其他免费托管选项
 
 - **Cloudflare Pages**：免费额度很大，国内外访问体验通常不错，连接 GitHub 后自动部署。
 - **Netlify**：拖拽目录即可发布，也支持自定义域名和 HTTPS。

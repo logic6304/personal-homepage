@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f5f1ea" />
-    <meta name="description" content="Logic 的个人主页：独立开发、设计与长期主义。" />
-    <title>Logic / 个人主页</title>
+    <meta name="description" content="杨易的个人主页：计算机科学与技术在读，喜欢代码、硬件和明日方舟。" />
+    <title>杨易 / 1ogic.cn</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -16,13 +16,13 @@
     <div class="site-shell">
       <header class="topbar">
         <a class="brand" href="#top" aria-label="返回首页">
-          <span class="brand-mark">L</span>
-          <span>1ogic<span class="muted">.cn</span></span>
+          <span class="brand-avatar"><img src="assets/avatar.jpg" alt="杨易的头像" /></span>
+          <span>杨易<span class="muted"> / 1ogic.cn</span></span>
         </a>
         <nav class="main-nav" aria-label="主导航">
-          <a class="nav-link active" href="#top">首页</a>
-          <a class="nav-link" href="#work">作品</a>
-          <a class="nav-link" href="#about">关于</a>
+          <a class="nav-link active" href="#top">主页</a>
+          <a class="nav-link" href="#pass">电子通行证</a>
+          <a class="nav-link" href="#about">关于我</a>
           <a class="nav-link" href="#notes">动态</a>
         </nav>
         <div class="topbar-actions">
@@ -30,7 +30,7 @@
             <i data-lucide="sun" class="theme-icon theme-icon-light"></i>
             <i data-lucide="moon" class="theme-icon theme-icon-dark"></i>
           </button>
-          <a class="topbar-contact" href="mailto:hello@1ogic.cn">联系我 <i data-lucide="arrow-up-right"></i></a>
+          <a class="topbar-message" href="/message/">匿名提问 <i data-lucide="arrow-up-right"></i></a>
           <button class="menu-button" id="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" title="打开菜单">
             <i data-lucide="menu"></i>
           </button>
@@ -40,73 +40,72 @@
       <main id="top">
         <section class="hero-section section-grid">
           <div class="hero-copy">
-            <p class="eyebrow"><span class="status-dot"></span>正在接一些有意思的项目</p>
-            <h1>把想法，<br /><em>做成现实。</em></h1>
-            <p class="hero-intro">你好，我是 Logic，一名独立开发者与产品设计师。喜欢把复杂的问题拆开，用清晰、好用的数字产品重新组合。</p>
+            <p class="eyebrow"><span class="status-dot"></span>计算机科学与技术 · 在读喵</p>
+            <h1>你好，我是<br /><em>杨易。</em></h1>
+            <p class="hero-intro">一名正在学习计算机科学与技术的学生。喜欢折腾代码、硬件和各种有趣的小东西，也喜欢把灵感做成可以真正使用的作品。</p>
             <div class="hero-actions">
-              <a class="button button-dark" href="#work">查看我的作品 <i data-lucide="arrow-down-right"></i></a>
-              <a class="text-link" href="mailto:hello@1ogic.cn">hello@1ogic.cn <i data-lucide="arrow-up-right"></i></a>
+              <a class="button button-dark" href="#pass">看看我的通行证 <i data-lucide="arrow-down-right"></i></a>
+              <a class="text-link" href="/message/">匿名问我 <i data-lucide="arrow-up-right"></i></a>
             </div>
             <div class="hero-meta">
-              <div><span class="meta-label">基于</span><span>中国 · 深圳</span></div>
-              <div><span class="meta-label">专注</span><span>产品 / 代码 / 设计</span></div>
+              <div><span class="meta-label">身份</span><span>计算机科学与技术在读</span></div>
+              <div><span class="meta-label">喜欢</span><span>代码 / 硬件 / 明日方舟</span></div>
             </div>
           </div>
-          <div class="hero-visual" aria-label="个人照片区域">
-            <div class="portrait-frame">
-              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1100&q=85" alt="一位开发者在工作" />
-              <div class="portrait-caption"><span>SELECTED WORK / 2024—25</span><span>↘</span></div>
+          <div class="hero-visual" aria-label="杨易的头像区域">
+            <div class="avatar-frame">
+              <img src="assets/avatar.jpg" alt="杨易的头像" />
+              <div class="avatar-caption"><span>YANG YI / 1OGIC.CN</span><span>NYA ↘</span></div>
             </div>
-            <div class="floating-note"><span class="note-icon">✦</span><span>让每次点击<br />都有意义</span></div>
+            <div class="floating-note"><span class="note-icon">✦</span><span>今天也要<br />认真写代码</span></div>
             <div class="visual-index">01<span>/</span>04</div>
           </div>
         </section>
 
         <section class="marquee-band" aria-label="个人标签">
-          <div class="marquee-track"><span>INDEPENDENT MAKER</span><b>✳</b><span>PRODUCT THINKER</span><b>✳</b><span>CURIOUS BY DEFAULT</span><b>✳</b><span>INDEPENDENT MAKER</span><b>✳</b><span>PRODUCT THINKER</span><b>✳</b><span>CURIOUS BY DEFAULT</span></div>
+          <div class="marquee-track"><span>COMPUTER SCIENCE STUDENT</span><b>✳</b><span>MAKER IN PROGRESS</span><b>✳</b><span>RHODES ISLAND SUPPORTER</span><b>✳</b><span>COMPUTER SCIENCE STUDENT</span><b>✳</b><span>MAKER IN PROGRESS</span><b>✳</b><span>RHODES ISLAND SUPPORTER</span></div>
         </section>
 
-        <section class="content-section" id="work">
+        <section class="content-section pass-section" id="pass">
           <div class="section-heading">
-            <div><p class="eyebrow">01 / 精选作品</p><h2>最近在做什么</h2></div>
-            <p class="section-summary">从一个空白画布开始，持续做一些真正解决问题的东西。</p>
+            <div><p class="eyebrow">01 / 正在售卖</p><h2>明日方舟<br /><em>电子通行证</em></h2></div>
+            <p class="section-summary">把罗德岛的日常装进一个可以带出门的实体小物件。下面是它在真实场景中的样子。</p>
           </div>
-          <div class="project-grid">
-            <a class="project-card project-card-featured" href="https://github.com/" target="_blank" rel="noreferrer">
-              <div class="project-image"><img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1400&q=85" alt="设计系统项目封面" /><span class="project-arrow"><i data-lucide="arrow-up-right"></i></span></div>
-              <div class="project-info"><div><span class="project-type">PRODUCT / 01</span><h3>Northstar</h3></div><p>一个帮独立创作者整理想法、规划作品的轻量工作台。</p></div>
-            </a>
-            <a class="project-card" href="https://github.com/" target="_blank" rel="noreferrer">
-              <div class="project-image"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=85" alt="开源工具项目封面" /><span class="project-arrow"><i data-lucide="arrow-up-right"></i></span></div>
-              <div class="project-info"><div><span class="project-type">OPEN SOURCE / 02</span><h3>tiny.tools</h3></div><p>让日常工作快一点的小工具集合。</p></div>
-            </a>
-            <a class="project-card" href="https://github.com/" target="_blank" rel="noreferrer">
-              <div class="project-image"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85" alt="个人网站项目封面" /><span class="project-arrow"><i data-lucide="arrow-up-right"></i></span></div>
-              <div class="project-info"><div><span class="project-type">WEB DESIGN / 03</span><h3>Archive 01</h3></div><p>记录灵感、阅读与实验的个人数字花园。</p></div>
-            </a>
+          <div class="pass-showcase">
+            <div class="pass-gallery">
+              <figure class="pass-photo pass-photo-main"><img src="assets/pass-holder-2.jpg" alt="明日方舟电子通行证佩戴场景" /><figcaption>佩戴场景 / 01</figcaption></figure>
+              <figure class="pass-photo pass-photo-side"><img src="assets/pass-holder-1.jpg" alt="明日方舟电子通行证与工作证同框" /><figcaption>使用场景 / 02</figcaption></figure>
+            </div>
+            <div class="pass-info">
+              <div><span class="project-type">ORIGINAL PROJECT / 01</span><h3>Rhodes Island e-Pass</h3><p>一张属于博士和干员们的电子通行证。适合展会、漫展、日常通勤，也可以作为桌面上的小小收藏。</p></div>
+              <div class="pass-tags"><span>明日方舟</span><span>实体周边</span><span>正在售卖</span></div>
+              <div class="pass-buy"><div><span class="meta-label">咨询方式</span><strong>QQ 280409626</strong></div><a class="button button-pink" href="https://wpa.qq.com/msgrd?v=3&uin=280409626&site=qq&menu=yes" target="_blank" rel="noreferrer">QQ 咨询购买 <i data-lucide="arrow-up-right"></i></a></div>
+            </div>
           </div>
         </section>
 
         <section class="about-section section-grid" id="about">
-          <div class="about-label"><p class="eyebrow">02 / 关于我</p><div class="about-symbol">↘</div></div>
-          <div class="about-copy"><h2>我相信，<br /><span>好的产品会让人更自由。</span></h2><p>过去几年，我在产品策略、界面设计和前端开发之间来回切换。比起追逐某一个头衔，我更享受从模糊的问题出发，一路把它变成可以被使用、被感受到的东西。</p><p>目前以独立开发的方式工作，也欢迎和认真做事的人一起探索新项目。</p><a class="text-link" href="mailto:hello@1ogic.cn">聊聊你的想法 <i data-lucide="arrow-up-right"></i></a></div>
+          <div class="about-label"><p class="eyebrow">02 / 关于我</p><div class="about-symbol">nya<br />↘</div></div>
+          <div class="about-copy"><h2>还在学习，<br /><span>也在把喜欢的事情认真做出来。</span></h2><p>我是杨易，目前正在读计算机科学与技术。比起给自己贴一个很确定的标签，我更愿意持续尝试：写程序、做硬件、研究好玩的交互，然后把过程记录下来。</p><p>如果你也对技术、独立制作或明日方舟感兴趣，欢迎通过 QQ 联系我；如果只是有一句不方便署名的话，也可以去匿名提问。</p><div class="about-actions"><a class="text-link" href="https://wpa.qq.com/msgrd?v=3&uin=280409626&site=qq&menu=yes" target="_blank" rel="noreferrer">联系我：280409626 <i data-lucide="arrow-up-right"></i></a><a class="text-link" href="/message/">匿名提问 <i data-lucide="arrow-up-right"></i></a></div></div>
         </section>
 
         <section class="notes-section content-section" id="notes">
-          <div class="section-heading"><div><p class="eyebrow">03 / 最近动态</p><h2>一些记录</h2></div><a class="text-link" href="mailto:hello@1ogic.cn">订阅更新 <i data-lucide="arrow-up-right"></i></a></div>
+          <div class="section-heading"><div><p class="eyebrow">03 / 最近动态</p><h2>一些记录</h2></div><a class="text-link" href="/message/">给我留言 <i data-lucide="arrow-up-right"></i></a></div>
           <div class="notes-list">
-            <a class="note-row" href="#notes"><span class="note-date">2025.06.18</span><span class="note-title">把个人网站搬到 GitHub Pages 之后，我学到了什么</span><i data-lucide="arrow-up-right"></i></a>
-            <a class="note-row" href="#notes"><span class="note-date">2025.05.02</span><span class="note-title">一个更适合长期使用的导航页，应该是什么样子</span><i data-lucide="arrow-up-right"></i></a>
-            <a class="note-row" href="#notes"><span class="note-date">2025.03.21</span><span class="note-title">减少一点工具，多留一点时间给真正重要的事</span><i data-lucide="arrow-up-right"></i></a>
+            <a class="note-row" href="/posts/2026-memoir/"><span class="note-date">2026.08.31</span><span class="note-title">8.31 生日：2026 回忆录</span><i data-lucide="arrow-up-right"></i></a>
+            <a class="note-row" href="/posts/qingdao-trip/"><span class="note-date">TRAVEL</span><span class="note-title">青岛旅行小记：美高梅、山港凯悦、海天大酒店自费测评</span><i data-lucide="arrow-up-right"></i></a>
+            <a class="note-row" href="#pass"><span class="note-date">NOW</span><span class="note-title">明日方舟电子通行证正在售卖，欢迎通过 QQ 咨询</span><i data-lucide="arrow-up-right"></i></a>
+            <a class="note-row" href="/message/"><span class="note-date">NEW</span><span class="note-title">个人主页增加了匿名提问入口，不需要填写姓名和邮箱</span><i data-lucide="arrow-up-right"></i></a>
+            <a class="note-row" href="#about"><span class="note-date">STUDY</span><span class="note-title">继续学习计算机科学，也继续做一点喜欢的东西</span><i data-lucide="arrow-up-right"></i></a>
           </div>
         </section>
 
         <section class="contact-section" id="contact">
-          <div class="contact-inner"><p class="eyebrow">04 / 保持联系</p><h2>有事发生？<br /><em>写封邮件给我。</em></h2><a class="contact-email" href="mailto:hello@1ogic.cn">hello@1ogic.cn <i data-lucide="arrow-up-right"></i></a><div class="social-links"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a><a href="https://x.com/" target="_blank" rel="noreferrer">X / Twitter</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></div></div>
+          <div class="contact-inner"><p class="eyebrow">04 / 保持联系</p><h2>想说点什么？<br /><em>匿名问我也可以。</em></h2><div class="contact-actions"><a class="contact-cta" href="/message/">打开匿名提问 <i data-lucide="arrow-up-right"></i></a><a class="contact-qq" href="https://wpa.qq.com/msgrd?v=3&uin=280409626&site=qq&menu=yes" target="_blank" rel="noreferrer">QQ / 280409626</a></div><p class="contact-note">匿名提问不要求姓名或邮箱。发送前请不要填写密码、身份证号等敏感信息。</p></div>
         </section>
       </main>
 
-      <footer class="footer"><span>© <span id="year"></span> Logic. Built with care.</span><a href="#top">回到顶部 <i data-lucide="arrow-up"></i></a><span>1ogic.cn</span></footer>
+      <footer class="footer"><span>© <span id="year"></span> 杨易 / 1ogic.cn</span><a href="#top">回到顶部 <i data-lucide="arrow-up"></i></a><span>在读喵 · 持续制作中</span></footer>
     </div>
     <script src="script.js"></script>
   </body>

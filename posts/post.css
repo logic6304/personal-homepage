@@ -1,0 +1,58 @@
+:root {
+  --post-paper: #fbf7f2;
+  --post-ink: #24231f;
+  --post-soft: #767169;
+  --post-line: #dcd4cb;
+  --post-pink: #ffb7cf;
+  --post-yellow: #ffe275;
+  --post-cyan: #b7eff1;
+}
+
+body { background: var(--post-paper); color: var(--post-ink); }
+.post-page { width: min(1180px, calc(100% - 64px)); min-height: 100vh; margin: 0 auto; }
+.post-topbar { display: flex; align-items: center; justify-content: space-between; height: 84px; border-bottom: 1px solid var(--post-line); }
+.post-brand { font-size: 13px; font-weight: 800; }
+.post-brand span { color: var(--post-soft); font-weight: 500; }
+.post-nav { display: flex; align-items: center; gap: 22px; color: var(--post-soft); font-size: 11px; }
+.post-nav a { padding-bottom: 4px; border-bottom: 1px solid transparent; }
+.post-nav a:hover { color: var(--post-ink); border-color: var(--post-ink); }
+.post-hero { display: grid; grid-template-columns: .36fr 1fr; gap: clamp(40px, 8vw, 120px); padding: 95px 0 78px; }
+.post-meta { padding-top: 9px; }
+.post-kicker { margin-bottom: 18px; color: var(--post-soft); font-family: var(--mono); font-size: 10px; letter-spacing: .05em; }
+.post-date { display: block; margin-bottom: 29px; font-family: var(--mono); font-size: 12px; }
+.post-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+.post-tags span { padding: 7px 9px; background: var(--post-pink); color: var(--post-ink); font-family: var(--mono); font-size: 9px; }
+.travel-page .post-tags span { background: var(--post-cyan); }
+.post-title h1 { max-width: 890px; margin: 0; font-size: clamp(57px, 8.3vw, 118px); line-height: .92; letter-spacing: -.07em; }
+.post-title h1 em { display: block; color: var(--post-soft); font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
+.post-deck { max-width: 610px; margin: 38px 0 0; color: var(--post-soft); font-size: 14px; line-height: 1.9; }
+.post-rule { height: 1px; background: var(--post-line); }
+.post-placeholder { display: grid; grid-template-columns: .36fr 1fr; gap: clamp(40px, 8vw, 120px); min-height: 430px; padding: 76px 0 110px; }
+.placeholder-label { color: var(--post-soft); font-family: var(--mono); font-size: 10px; }
+.placeholder-content { max-width: 690px; }
+.placeholder-mark { display: block; margin-bottom: 29px; color: var(--post-pink); font-family: Georgia, "Times New Roman", serif; font-size: 72px; line-height: .7; }
+.travel-page .placeholder-mark { color: #6acdd1; }
+.placeholder-content h2 { margin: 0 0 21px; font-size: clamp(30px, 4vw, 53px); line-height: 1; }
+.placeholder-content p { max-width: 540px; margin-bottom: 28px; color: var(--post-soft); font-size: 13px; line-height: 1.85; }
+.outline-list { display: grid; gap: 0; border-top: 1px solid var(--post-line); }
+.outline-row { display: grid; grid-template-columns: 48px 1fr; gap: 17px; padding: 17px 0; border-bottom: 1px solid var(--post-line); font-size: 12px; }
+.outline-row span:first-child { color: var(--post-soft); font-family: var(--mono); font-size: 9px; }
+.post-footer { display: flex; align-items: center; justify-content: space-between; min-height: 76px; border-top: 1px solid var(--post-line); color: var(--post-soft); font-family: var(--mono); font-size: 9px; }
+.post-footer a { color: var(--post-ink); }
+.post-footer a:hover { color: var(--post-soft); }
+
+@media (max-width: 780px) {
+  .post-page { width: min(100% - 40px, 600px); }
+  .post-topbar { height: 72px; }
+  .post-nav { gap: 13px; }
+  .post-nav a:first-child { display: none; }
+  .post-hero, .post-placeholder { display: block; }
+  .post-hero { padding: 67px 0 62px; }
+  .post-meta { margin-bottom: 45px; }
+  .post-title h1 { font-size: clamp(55px, 16.5vw, 84px); }
+  .post-deck { font-size: 13px; }
+  .post-placeholder { min-height: 0; padding: 58px 0 82px; }
+  .placeholder-label { display: block; margin-bottom: 48px; }
+  .placeholder-content p { font-size: 12px; }
+  .post-footer { min-height: 91px; flex-wrap: wrap; gap: 12px; padding: 18px 0; }
+}

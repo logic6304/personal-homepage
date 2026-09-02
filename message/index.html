@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#222421" />
+    <meta name="description" content="给杨易的匿名提问箱。" />
+    <title>匿名提问 / 1ogic.cn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="message.css" />
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.js"></script>
+  </head>
+  <body>
+    <main class="message-page">
+      <header class="message-topbar"><a class="message-brand" href="/">杨易 <span>/ 1ogic.cn</span></a><a class="back-link" href="/"><i data-lucide="arrow-left"></i> 返回主页</a></header>
+      <section class="message-layout">
+        <div class="message-intro"><p class="eyebrow">MESSAGE BOX / 01</p><h1>想问什么，<br /><em>直接说。</em></h1><p class="message-lead">这是一个匿名提问箱。不需要填写姓名，也不需要留下邮箱；你可以问学习、做东西、明日方舟，或者任何你想聊的话题。</p><div class="message-aside"><span class="aside-symbol">✦</span><span>把问题写下来，<br />答案会找到它。</span></div></div>
+        <div class="message-form-wrap"><form id="message-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST"><label for="message">你的问题</label><textarea id="message" name="message" rows="8" maxlength="1200" required placeholder="在这里写下想问的话……"></textarea><div class="form-footer"><span id="char-count">0 / 1200</span><button class="send-button" type="submit">发送问题 <i data-lucide="arrow-up-right"></i></button></div><p class="form-status" id="form-status" role="status" aria-live="polite"></p></form><p class="privacy-note">请不要填写密码、身份证号、住址等敏感信息。页面本身不要求身份信息，但接收表单的第三方服务可能记录基础访问日志。</p></div>
+      </section>
+      <footer class="message-footer"><span>匿名提问 / 1ogic.cn</span><span>QQ 280409626</span></footer>
+    </main>
+    <script src="message.js"></script>
+  </body>
+</html>

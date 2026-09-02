@@ -157,3 +157,55 @@ h3 { margin: 8px 0 0; font-size: 26px; letter-spacing: -.04em; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+/* Personal profile and project overrides. */
+:root { --paper: #fbf7f2; --paper-soft: #f1e9e3; --ink: #24231f; --ink-soft: #767169; --line: #dcd4cb; --pink: #ffb7cf; --yellow: #ffe275; --cyan: #b7eff1; --white: #fffdf9; }
+body.dark { --paper: #222421; --paper-soft: #2f312d; --ink: #f7f1e9; --ink-soft: #b3aea4; --line: #4d504a; --white: #2d302b; }
+.brand-avatar { display: grid; width: 30px; height: 30px; overflow: hidden; place-items: center; border: 1px solid var(--ink); border-radius: 50%; background: var(--pink); }
+.brand-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.topbar-message { display: inline-flex; align-items: center; gap: 6px; padding: 10px 13px; border: 1px solid var(--ink); font-size: 11px; font-weight: 700; }
+.topbar-message:hover { background: var(--yellow); }
+.topbar-message svg { width: 14px; height: 14px; stroke-width: 1.8; }
+.avatar-frame { position: relative; width: min(100%, 470px); margin-left: auto; background: var(--pink); }
+.avatar-frame::before { content: ""; position: absolute; z-index: -1; inset: 15px -15px -15px 15px; border: 1px solid var(--line); }
+.avatar-frame img { width: 100%; aspect-ratio: 1; object-fit: cover; mix-blend-mode: multiply; }
+body.dark .avatar-frame img { mix-blend-mode: normal; opacity: .9; }
+.avatar-caption { position: absolute; left: 0; right: 0; bottom: 0; display: flex; justify-content: space-between; padding: 16px 18px; background: rgba(36,35,31,.87); color: #fbf7f2; font-family: var(--mono); font-size: 9px; }
+.pass-showcase { display: grid; grid-template-columns: 1.16fr .84fr; gap: 55px; align-items: stretch; }
+.pass-gallery { display: grid; grid-template-columns: 1.1fr .9fr; gap: 14px; align-items: end; }
+.pass-photo { position: relative; overflow: hidden; background: var(--paper-soft); }
+.pass-photo-main { aspect-ratio: .76; }
+.pass-photo-side { aspect-ratio: .72; margin-bottom: 39px; }
+.pass-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.pass-photo:hover img { transform: scale(1.04); }
+.pass-photo figcaption { position: absolute; right: 0; bottom: 0; left: 0; padding: 12px 13px; background: rgba(36,35,31,.78); color: #fbf7f2; font-family: var(--mono); font-size: 9px; }
+.pass-info { display: flex; flex-direction: column; justify-content: space-between; min-height: 350px; padding: 28px; border: 1px solid var(--line); background: var(--white); }
+.pass-info h3 { margin: 13px 0 18px; font-size: clamp(27px, 3vw, 41px); line-height: 1; letter-spacing: -.06em; }
+.pass-info p { max-width: 350px; margin-bottom: 0; color: var(--ink-soft); font-size: 13px; line-height: 1.8; }
+.pass-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 42px 0 29px; }
+.pass-tags span { padding: 7px 9px; background: var(--paper-soft); color: var(--ink-soft); font-family: var(--mono); font-size: 9px; }
+.pass-tags span:last-child { background: var(--pink); color: var(--ink); }
+.pass-buy { display: flex; align-items: end; justify-content: space-between; gap: 18px; padding-top: 18px; border-top: 1px solid var(--line); }
+.pass-buy div { display: flex; flex-direction: column; gap: 8px; }
+.pass-buy strong { font-family: var(--mono); font-size: 11px; }
+.about-actions { display: flex; flex-wrap: wrap; gap: 23px; margin-top: 25px; }
+.contact-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 28px; margin-top: 49px; }
+.contact-cta { display: inline-flex; align-items: center; gap: 10px; padding-bottom: 10px; border-bottom: 1px solid var(--paper); font-family: var(--mono); font-size: 13px; }
+.contact-cta:hover { color: var(--yellow); border-color: var(--yellow); }
+.contact-qq { color: #aaa79d; font-family: var(--mono); font-size: 12px; }
+.contact-qq:hover { color: var(--pink); }
+.contact-note { max-width: 390px; margin: 78px 0 0; color: #aaa79d; font-size: 11px; line-height: 1.7; }
+
+@media (max-width: 780px) {
+  .topbar-message { display: none; }
+  .pass-showcase { display: flex; flex-direction: column; gap: 28px; }
+  .pass-gallery { gap: 10px; }
+  .pass-photo-side { margin-bottom: 20px; }
+  .pass-info { min-height: 0; padding: 24px 20px; }
+  .pass-tags { margin: 35px 0 25px; }
+  .pass-buy { align-items: stretch; flex-direction: column; }
+  .pass-buy .button { align-self: flex-start; }
+  .contact-section { padding: 87px 20px 74px; }
+  .contact-section h2 { font-size: clamp(51px, 14vw, 83px); }
+  .contact-note { margin-top: 62px; }
+}
