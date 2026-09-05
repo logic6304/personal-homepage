@@ -188,6 +188,7 @@ body.dark .avatar-frame img { mix-blend-mode: normal; opacity: .9; }
 .pass-buy { display: flex; align-items: end; justify-content: space-between; gap: 18px; padding-top: 18px; border-top: 1px solid var(--line); }
 .pass-buy div { display: flex; flex-direction: column; gap: 8px; }
 .pass-buy strong { font-family: var(--mono); font-size: 11px; }
+.pass-buy-actions { align-items: center; flex-direction: row !important; flex-wrap: wrap; justify-content: flex-end; gap: 18px !important; }
 .about-actions { display: flex; flex-wrap: wrap; gap: 23px; margin-top: 25px; }
 .contact-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 28px; margin-top: 49px; }
 .contact-cta { display: inline-flex; align-items: center; gap: 10px; padding-bottom: 10px; border-bottom: 1px solid var(--paper); font-family: var(--mono); font-size: 13px; }
@@ -204,6 +205,7 @@ body.dark .avatar-frame img { mix-blend-mode: normal; opacity: .9; }
   .pass-info { min-height: 0; padding: 24px 20px; }
   .pass-tags { margin: 35px 0 25px; }
   .pass-buy { align-items: stretch; flex-direction: column; }
+  .pass-buy-actions { justify-content: flex-start; }
   .pass-buy .button { align-self: flex-start; }
   .contact-section { padding: 87px 20px 74px; }
   .contact-section h2 { font-size: clamp(51px, 14vw, 83px); }

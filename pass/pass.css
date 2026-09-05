@@ -1,0 +1,82 @@
+.pass-page { --pass-pink: #ffb7cf; --pass-yellow: #ffe275; --pass-cyan: #b7eff1; background: var(--paper); }
+.pass-topbar, .pass-hero, .pass-section, .pass-footer { width: min(1180px, calc(100% - 64px)); margin: 0 auto; }
+.pass-topbar { height: 84px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.pass-brand { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 800; }
+.pass-brand small { color: var(--ink-soft); font-size: 11px; font-weight: 500; }
+.pass-top-actions { display: flex; align-items: center; gap: 25px; }
+.back-link { display: inline-flex; align-items: center; gap: 7px; color: var(--ink-soft); font-size: 11px; }
+.back-link:hover { color: var(--ink); }
+.back-link svg { width: 14px; height: 14px; }
+.pass-hero { display: grid; grid-template-columns: .91fr 1.09fr; gap: clamp(55px, 9vw, 135px); align-items: center; padding: 102px 0 128px; }
+.pass-hero h1 { margin-bottom: 31px; font-size: clamp(58px, 7.5vw, 105px); }
+.pass-lead { max-width: 430px; color: var(--ink-soft); font-size: 15px; line-height: 1.9; }
+.pass-hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 23px; margin-top: 39px; }
+.pass-status { color: var(--ink-soft); font-family: var(--mono); font-size: 10px; }
+.pass-status .status-dot { margin-right: 7px; }
+.pass-facts { display: flex; gap: 34px; margin-top: 83px; padding-top: 17px; border-top: 1px solid var(--line); }
+.pass-facts div { display: flex; flex-direction: column; gap: 8px; }
+.pass-facts strong { font-family: var(--mono); font-size: 10px; font-weight: 500; }
+.pass-hero-gallery { position: relative; min-height: 545px; }
+.pass-image { position: absolute; overflow: hidden; margin: 0; background: var(--paper-soft); }
+.pass-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.pass-image:hover img { transform: scale(1.04); }
+.pass-image-large { top: 0; right: 0; width: 67%; height: 475px; background: var(--pass-pink); }
+.pass-image-small { bottom: 0; left: 0; width: 47%; height: 282px; border: 10px solid var(--paper); background: var(--pass-yellow); }
+.pass-image figcaption { position: absolute; right: 0; bottom: 0; left: 0; padding: 12px 13px; background: rgba(36,35,31,.78); color: #fbf7f2; font-family: var(--mono); font-size: 9px; }
+.pass-gallery-mark { position: absolute; right: -27px; bottom: 35px; color: var(--ink-soft); font-family: var(--serif); font-size: 28px; line-height: .9; }
+.pass-band { display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 26px max(32px, calc((100% - 1116px) / 2)); background: var(--pass-yellow); color: var(--ink); }
+.pass-band > div { display: flex; align-items: center; gap: 22px; }
+.pass-band-label { font-family: var(--mono); font-size: 9px; }
+.pass-band strong { font-size: 15px; }
+.pass-band p { max-width: 390px; margin: 0; font-size: 11px; line-height: 1.7; }
+.pass-section { display: grid; grid-template-columns: .83fr 1.17fr; gap: clamp(50px, 10vw, 145px); padding: 126px 0; border-bottom: 1px solid var(--line); }
+.pass-section-label span { color: var(--ink-soft); font-family: var(--serif); font-size: 28px; line-height: 1.25; }
+.pass-section-copy h2 { margin-bottom: 36px; }
+.pass-section-copy > p { max-width: 530px; color: var(--ink-soft); font-size: 14px; line-height: 1.9; }
+.detail-list { margin-top: 57px; border-top: 1px solid var(--line); }
+.detail-list > div { display: grid; grid-template-columns: 42px 1fr; gap: 0 14px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.detail-list span { color: var(--ink-soft); font-family: var(--mono); font-size: 10px; }
+.detail-list strong { font-size: 14px; }
+.detail-list p { grid-column: 2; margin: 6px 0 0; color: var(--ink-soft); font-size: 12px; line-height: 1.6; }
+.pass-process { border-bottom: 0; padding-bottom: 120px; }
+.process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 13px; }
+.process-item { min-height: 250px; padding: 25px; border: 1px solid var(--line); background: var(--white); }
+.process-item:nth-child(2) { background: var(--pass-cyan); }
+.process-item:nth-child(3) { background: var(--pass-pink); }
+.process-number { font-family: var(--mono); font-size: 11px; }
+.process-item h3 { margin: 77px 0 12px; font-size: 22px; }
+.process-item p { margin: 0; color: var(--ink-soft); font-size: 12px; line-height: 1.65; }
+.pass-cta { display: flex; align-items: end; justify-content: space-between; gap: 30px; padding: 92px max(32px, calc((100% - 1116px) / 2)); background: var(--ink); color: var(--paper); }
+.pass-cta .eyebrow { color: #aaa79d; margin-bottom: 18px; }
+.pass-cta h2 { font-size: clamp(43px, 5.4vw, 76px); }
+.pass-cta h2 em { color: #aaa79d; }
+.pass-cta .button-dark { background: var(--paper); color: var(--ink); }
+.pass-footer { display: flex; align-items: center; justify-content: space-between; min-height: 75px; color: var(--ink-soft); font-family: var(--mono); font-size: 9px; }
+.pass-footer a { display: inline-flex; align-items: center; gap: 7px; color: var(--ink); }
+.pass-footer svg { width: 13px; height: 13px; }
+@media (max-width: 780px) {
+  .pass-topbar, .pass-hero, .pass-section, .pass-footer { width: min(100% - 40px, 600px); }
+  .pass-topbar { height: 72px; }
+  .pass-top-actions { gap: 8px; }
+  .pass-hero { display: flex; flex-direction: column; align-items: stretch; gap: 67px; padding: 72px 0 90px; }
+  .pass-hero h1 { font-size: clamp(58px, 16vw, 91px); }
+  .pass-hero-gallery { min-height: 430px; }
+  .pass-image-large { width: 74%; height: 375px; }
+  .pass-image-small { width: 51%; height: 230px; border-width: 8px; }
+  .pass-gallery-mark { right: -4px; bottom: 20px; }
+  .pass-facts { gap: 17px; margin-top: 63px; }
+  .pass-band { align-items: start; flex-direction: column; gap: 14px; padding: 23px 20px; }
+  .pass-band > div { align-items: start; flex-direction: column; gap: 8px; }
+  .pass-section { display: block; padding: 83px 0; }
+  .pass-section-label { margin-bottom: 48px; }
+  .pass-section-label span { font-size: 24px; }
+  .pass-section-copy h2 { margin-bottom: 29px; }
+  .detail-list { margin-top: 44px; }
+  .process-grid { display: block; }
+  .process-item { min-height: 190px; margin-bottom: 10px; }
+  .process-item h3 { margin-top: 53px; }
+  .pass-process { padding-bottom: 84px; }
+  .pass-cta { align-items: start; flex-direction: column; padding: 75px 20px; }
+  .pass-cta h2 { font-size: clamp(46px, 14vw, 78px); }
+  .pass-footer { min-height: 95px; flex-wrap: wrap; gap: 12px; padding: 18px 0; }
+}

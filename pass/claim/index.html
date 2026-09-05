@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#222421" />
+    <meta name="description" content="明日方舟电子通行证购买资格申请。" />
+    <title>申请购买资格 / 电子通行证</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../pass.css" />
+    <link rel="stylesheet" href="claim.css" />
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.js"></script>
+  </head>
+  <body class="claim-page">
+    <header class="claim-topbar"><a class="pass-brand" href="../../"><span class="brand-avatar"><img src="../../assets/avatar.jpg" alt="杨易的头像" /></span><span>杨易 <small>/ 1ogic.cn</small></span></a><a class="back-link" href="../"><i data-lucide="arrow-left"></i> 返回项目介绍</a></header>
+
+    <main class="claim-main">
+      <section class="claim-intro"><p class="eyebrow">E-PASS / QUALIFICATION</p><h1>先登记注册账号，<br /><em>再等开放喵。</em></h1><p>购买资格页面已经准备好。正式开放后，你需要使用邮箱账号登录，在名额开放时提交一次申请。</p><div class="claim-status"><span class="status-dot"></span><div><span>当前状态</span><strong>尚未开放申请</strong></div></div><div class="claim-steps"><button class="step-arrow" id="step-arrow" type="button" aria-label="播放申请流程动画" title="播放申请流程动画"><span class="step-arrow-track"></span><i data-lucide="arrow-right"></i></button><div class="claim-step-list"><div class="claim-step active"><span>01</span><strong>账号</strong></div><div class="claim-step"><span>02</span><strong>资格</strong></div><div class="claim-step"><span>03</span><strong>结果</strong></div></div></div></section>
+
+      <section class="account-panel" aria-labelledby="account-title"><div class="preview-warning"><i data-lucide="info"></i><span>这是前端预览，后台尚未接入。请不要填写真实密码。</span></div><div class="account-panel-heading"><p class="eyebrow">ACCOUNT / 01</p><h2 id="account-title">创建账号</h2><p>推荐使用常用邮箱。正式版会通过邮箱验证码确认账号归属。</p></div><div class="account-tabs" role="tablist" aria-label="账号操作"><button class="account-tab active" type="button" data-mode="register" role="tab" aria-selected="true">注册</button><button class="account-tab" type="button" data-mode="login" role="tab" aria-selected="false">已有账号登录</button></div><form class="account-form" id="account-form"><div class="field-group"><label for="account-email">邮箱地址</label><div class="input-shell"><input id="account-email" name="email" type="email" autocomplete="email" placeholder="例如：you@qq.com" required /></div></div><div class="field-group"><label for="account-password">设置密码</label><div class="input-shell"><input id="account-password" name="password" type="password" autocomplete="new-password" minlength="8" placeholder="至少 8 位" required /></div><p class="security-note"><i data-lucide="shield-check"></i><span>正式版会用 HTTPS / TLS 保护传输，并用 Argon2id 加随机盐做单向哈希保存。站长和后台都看不到你的原密码。</span></p></div><div class="field-group confirm-field"><label for="account-confirm">确认密码</label><div class="input-shell"><input id="account-confirm" name="confirm" type="password" autocomplete="new-password" minlength="8" placeholder="再次输入密码" required /></div></div><label class="check-line"><input type="checkbox" required /> <span>我同意账号仅用于本次项目资格申请</span></label><button class="button account-submit" type="submit"><span class="register-label">注册并继续</span><span class="login-label">登录并继续</span><i data-lucide="arrow-up-right"></i></button><p class="account-status" id="account-status" role="status" aria-live="polite"></p></form><div class="verification-preview" id="verification-preview" hidden><span class="verification-icon"><i data-lucide="mail-check"></i></span><div><strong>下一步：验证邮箱</strong><p>正式版会把验证码发送到 <span id="masked-email">你的邮箱</span>。验证后才能进入资格申请。</p></div></div><p class="account-note">不需要付款。我们不会在此页面索要微信支付、银行卡或身份证信息。</p></section>
+    </main>
+
+    <section class="claim-bottom"><div><p class="eyebrow">NO PAYMENT AT THIS STAGE</p><h2>资格开放后，<br /><em>这里再见。</em></h2></div><a href="../" class="text-link">查看项目介绍 <i data-lucide="arrow-up-right"></i></a></section>
+    <footer class="pass-footer"><span>© <span id="year"></span> 杨易 / 1ogic.cn</span><a href="../../">主页 <i data-lucide="arrow-up"></i></a><span>ACCOUNT PREVIEW</span></footer>
+    <script src="claim.js"></script>
+  </body>
+</html>
